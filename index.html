@@ -242,6 +242,69 @@
       flex-shrink: 0;
     }
 
+    /* ── EQUIPO FOTO ── */
+    .equipo-foto {
+      max-width: 760px;
+      margin: 3rem auto 0;
+    }
+
+    .equipo-foto h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      color: var(--malva);
+      margin-bottom: 1.25rem;
+    }
+
+    .equipo-foto img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 16px;
+      box-shadow: 0 8px 40px rgba(142, 95, 114, 0.18);
+    }
+
+    /* ── AVANCES ── */
+    #avances {
+      background: #f7e9ed;
+      padding: 5rem 2rem;
+    }
+
+    .avances-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .avances-texto p {
+      color: var(--gris);
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .avances-texto strong {
+      color: var(--malva);
+    }
+
+    .avances-texto .avances-destacado {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      color: var(--malva);
+      border-left: 3px solid var(--rosa);
+      padding-left: 1rem;
+      margin-bottom: 0;
+    }
+
+    .avances-inner img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 16px;
+      box-shadow: 0 8px 40px rgba(142, 95, 114, 0.18);
+    }
+
     /* ── POR QUÉ ── */
     #porque {
       background: var(--blanco);
@@ -485,6 +548,18 @@
         padding: 1.5rem;
       }
     }
+
+    @media (max-width: 760px) {
+      .avances-inner {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .avances-inner img {
+        max-width: 420px;
+        margin: 0 auto;
+      }
+    }
   </style>
 </head>
 
@@ -495,6 +570,7 @@
     <a class="nav-logo" href="#">MICA</a>
     <ul class="nav-links">
       <li><a href="#video">El proyecto</a></li>
+      <li><a href="#avances">Avances</a></li>
       <li><a href="#porque">¿Por qué participar?</a></li>
       <li><a href="#cuestionarios">Participar</a></li>
     </ul>
@@ -541,6 +617,35 @@
         <li>Providencia Juana Trujillo Muñoz</li>
         <li>Irene Hoyo Guillot</li>
       </ul>
+    </div>
+
+    <!-- EQUIPO EN LA NOCHE DE LOS INVESTIGADORES -->
+    <figure class="equipo-foto">
+      <h3>El equipo investigador acerca el proyecto a la ciudadanía en la Noche Europea de los Investigadores</h3>
+      <img src="equipo-noche-investigadores.jpg"
+        alt="Equipo investigador del Proyecto MICA junto a su póster en la Noche Europea de los Investigadores"
+        width="1600" height="900" loading="lazy" />
+    </figure>
+  </section>
+
+  <!-- AVANCES -->
+  <section id="avances">
+    <div class="avances-inner">
+      <div class="avances-texto">
+        <h2 class="section-title">¡El Proyecto MICA sigue avanzando!</h2>
+        <p>
+          Más de <strong>100 mujeres de Melilla</strong> han participado en nuestra primera fase de
+          recogida de datos, en la que hemos evaluado su salud, composición corporal, masa muscular
+          y hábitos de vida.
+        </p>
+        <p class="avances-destacado">
+          ¡El siguiente paso será aprender juntas cómo mejorar la salud y el bienestar durante la
+          perimenopausia y la menopausia!
+        </p>
+      </div>
+      <img src="avances-recogida-datos.jpg"
+        alt="Mosaico de fotos de la recogida de datos: medición de cintura, composición corporal, glucemia y masa muscular"
+        width="1000" height="1000" loading="lazy" />
     </div>
   </section>
 
