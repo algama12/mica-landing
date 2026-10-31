@@ -197,6 +197,57 @@
       display: block;
     }
 
+    /* ── FORMACIÓN ── */
+    #formacion {
+      background: var(--blanco);
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+
+    .formacion-texto {
+      max-width: 720px;
+      margin: 0 auto 2.5rem;
+      text-align: left;
+    }
+
+    .formacion-texto p {
+      color: var(--gris);
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .formacion-texto strong {
+      color: var(--malva);
+    }
+
+    .formacion-texto .formacion-destacado {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      color: var(--malva);
+      border-left: 3px solid var(--rosa);
+      padding-left: 1rem;
+      margin: 1.5rem 0 0;
+    }
+
+    .diptico {
+      max-width: 960px;
+      margin: 0 auto 2rem;
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .diptico a {
+      display: block;
+    }
+
+    .diptico img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 16px;
+      box-shadow: 0 8px 40px rgba(142, 95, 114, 0.18);
+    }
+
     /* ── RESPONSABLES ── */
     .responsables {
       max-width: 760px;
@@ -569,6 +620,7 @@
   <nav>
     <a class="nav-logo" href="#">MICA</a>
     <ul class="nav-links">
+      <li><a href="#formacion">Formación</a></li>
       <li><a href="#video">El proyecto</a></li>
       <li><a href="#avances">Avances</a></li>
       <li><a href="#porque">¿Por qué participar?</a></li>
@@ -584,6 +636,47 @@
       <span class="sigla">M</span>ujeres en climaterio: <span class="sigla">I</span>ndicadores metabólicos, <span class="sigla">C</span>alidad de vida, bienestar y determinantes de salud. <span class="sigla">A</span>vances en la comprensión y atención en una etapa invisibilizada.
     </p>
     <a href="#cuestionarios" class="btn-primary">Participar ahora</a>
+  </section>
+
+  <!-- FORMACIÓN -->
+  <section id="formacion">
+    <h2 class="section-title">💜 ¡La menopausia, mejor sin filtros, sin mitos y sin silencios!</h2>
+    <div class="formacion-texto">
+      <p>
+        Los días <strong>23 y 24 de noviembre</strong> te esperamos para compartir dos jornadas de formación,
+        resolver dudas y aprender a cuidarnos mejor durante esta etapa. 🌸
+      </p>
+      <p>
+        ✨ ¡Y no hace falta que hayas participado en la toma de muestras para venir! Esta formación está
+        <strong>abierta a todas las mujeres</strong> que quieran conocerse mejor, comprender su cuerpo y cuidar
+        su salud y bienestar durante el climaterio.
+      </p>
+      <p>
+        📅 Puedes elegir el <strong>turno de mañana o de tarde</strong>, pero recuerda que la formación se
+        desarrollará durante los dos días: el 23 hablaremos de los cambios hormonales, el autocuidado, el suelo
+        pélvico y la sexualidad; y el 24, de alimentación, sueño, descanso y ejercicio. Elige el turno que prefieras.
+      </p>
+      <p>
+        ❤️ ¡Y ven con tu pareja si la tienes! La menopausia también se vive en pareja, y entender lo que ocurre
+        ayuda a acompañarnos, comprendernos y disfrutar juntas de esta etapa.
+      </p>
+      <p class="formacion-destacado">
+        ¡Anímate a participar! Porque conocer nuestro cuerpo es el primer paso para cuidarnos. 💜
+      </p>
+    </div>
+    <div class="diptico">
+      <a href="programa-mica-1.jpg" target="_blank" rel="noopener">
+        <img src="programa-mica-1.jpg"
+          alt="Díptico del curso Menopausia sin filtros, sin mitos y sin silencios: lugar, turnos de mañana y tarde y bloques del programa"
+          width="1800" height="1273" loading="lazy" />
+      </a>
+      <a href="programa-mica-2.jpg" target="_blank" rel="noopener">
+        <img src="programa-mica-2.jpg"
+          alt="Programa detallado de las sesiones del lunes 23 y martes 24 de noviembre con horarios y ponentes"
+          width="1800" height="1273" loading="lazy" />
+      </a>
+    </div>
+    <a href="programa-mica.pdf" class="btn-q" download>Descargar programa (PDF)</a>
   </section>
 
   <!-- VIDEO -->
